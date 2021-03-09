@@ -12,7 +12,7 @@
     <body>
         <header><h1>Página Principal</h1></header>
 
-        <aside id="left side">
+        <div id="left side">
             <ul type ="disc">
                 <li> Item I </li> 	
                 <li> Item II </li>
@@ -20,13 +20,10 @@
                 <li> Item IV </li>
                 <li> Item V</li>
             </ul>	
-        </aside>
-        
-        <aside id="right-side">
-            <img src="../assets/images/image.jpg">
-        </aside>
+        </div>
 
-        <main>
+        <div id="central-side">
+            
             <table>
                 <tr>						
                     <th> Código </th>		
@@ -51,8 +48,36 @@
                     <td rowspan="2"> Cupom de Desconto - R$ 10 </td>	
                     <td colspan="2"> Cupom de Desconto - R$ 20 </td>	
                 </tr>
+                <tr>						
+                    <th> Código </th>		
+                    <th> Produto </th>
+                    <th> Preço </th>	
+                </tr>
+            
+                <tr>						
+                    <td> 0001 </td>
+                    <td> Notebook </td>
+                    <td> 3,299,99 </td>	
+                </tr>
+            
+                <tr>					
+                    <td> 0002 </td>
+                    <td> Tablet </td>
+                    <td> 459,99 </td>	
+                </tr>
+            
+                <tr>						
+                    <td> Desconto </td>
+                    <td rowspan="2"> Cupom de Desconto - R$ 10 </td>	
+                    <td colspan="2"> Cupom de Desconto - R$ 20 </td>	
+                </tr>
             </table>
-        </main>
+            
+        </div>
+
+        <div id="right-side">
+            <img src="../assets/images/image.jpg">
+        </div>
     
         <footer id="footer-bottom">
             <p>© 2021 Copyright Atividade 08-03-2021 Autor: Lucas Eduardo de Oliveira Santos</p>
