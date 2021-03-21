@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt">
 <html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
+        <script type="text/javascript" src="static/js/index.js" defer></script>
         <title>WebSite</title>
     </head>
 
@@ -20,23 +23,23 @@
         </header>
 
         <main>
-            <div class="conteudo">
+            <div class="content">
                 <div id="div-form">
-                    <h2>Cadastre-se</h2>
-                    <form onsubmit="return enviarFormulario(this);">
+                    <h2>Cadastrar</h2>
+                    <form onsubmit="return cadastrar()">
                         <div>
-                            <label>Nome</label>
-                            <input id="nome" class="form-input" type="text" name="nome" />
+                            <label>Nome: </label>
+                            <input id="nome" class="form-input" type="text" name="nome" placeholder=" Insira o nome: " required/>
                         </div>
                         <div>
-                            <label>E-mail</label>
-                            <input id="email" class="form-input" type="email" name="email" />
+                            <label>E-mail: </label>
+                            <input id="email" class="form-input" type="email" name="email" placeholder=" Insira o e-mail:" required/>
                         </div>
                         <div>
-                            <label>Telefone</label>
-                            <input id="telefone" class="form-input" type="text" name="telefone" />
+                            <label>Telefone: </label>
+                            <input id="telefone" class="form-input" type="text" name="telefone" placeholder=" Insira o telefone:" required/>
                         </div>
-                        <button>Cadastrar</button>
+                        <input type="submit" value="Adicionar" name="submit">
                     </form>
                 </div>
                 <table>
@@ -53,24 +56,11 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Alexandre
-                            </td>
-                            <td>
-                                email@email.com
-                            </td>
-                            <td>
-                                (35) 11111-1111
-                            </td>
-                        </tr>
-                    </tbody>
+                    <tbody id="tabela-pessoa"></tbody>
                 </table>
             </div>
-        </div>
-    </main>
-    
+        </main>
+        
         <footer>
             <h5>Copyright © 2020 Lucas Eduardo de Oliveira Santos</h5>
         </footer>

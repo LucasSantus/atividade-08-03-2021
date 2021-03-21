@@ -1,14 +1,15 @@
+/* BODY */
 body{
     background-color: #CFFDBC;
 }
 
+/* HEADER */
 header {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
     background-color: #048243;
     align-items:center; 
-    
 }
   
 header a {
@@ -31,6 +32,49 @@ header a.logo {
     float: right;
 }
 
+/* CONTEÚDO */
+.content{
+    width: 100%;
+}
+
+/* FORM */
+#div-form{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+
+#div-form h2{
+    margin-bottom: 30px;
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+form input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* TABLE */
+
+table{
+    border: 1px solid;
+    margin: auto;
+}
+
+table td, table th{
+    border: 1px solid;
+}
+
+/* FOOTER */
+
 footer {
     position: absolute;
     bottom: 0;
@@ -44,7 +88,7 @@ footer {
 }
   
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .header a {
       float: none;
       display: block;
@@ -53,44 +97,4 @@ footer {
     .header-right {
       float: none;
     }
-}
-
-.conteudo{
-    width: 100%;
-}
-
-#div-form{
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    margin-top: -5px;
-    margin-bottom: 5px;
-    border: 1px solid;
-}
-
-form label{
-    display: block;
-    font-weight: bold;
-    margin: 5px;
-}
-
-#div-form h2{
-    margin-bottom: 30px;
-}
-
-form input{
-    width: 50%;
-}
-
-form button{
-    margin-top: 20px;
-}
-
-table{
-    border: 1px solid;
-    margin: auto;
-}
-
-table td, table th{
-    border: 1px solid;
 }
