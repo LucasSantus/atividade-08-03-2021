@@ -31,46 +31,6 @@ header a.logo {
     float: right;
 }
 
-table{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border: 1px solid;
-    
-    width:100%;
-}
-   
-.position-left {
-    display: inline;
-    width: 25%;
-    float: left;
-    background-color: #32BF84;
-}
-
-.wrapper {
-    text-align: center;
-}
-
-.wrapper ul {
-    display: inline-block;
-    padding: 0;
-}
-
-main{
-    display: inline;
-    width: 40%;
-    float: left;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #CAFFFB;
-}
-   
-.position-right {
-    display: inline;
-    width: 25%;
-    float: right;
-    background-color: #32BF84;
-}
-
 footer {
     position: absolute;
     bottom: 0;
@@ -93,4 +53,44 @@ footer {
     .header-right {
       float: none;
     }
-  }
+}
+
+.conteudo{
+    width: 100%;
+}
+
+#div-form{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    border: 1px solid;
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#div-form h2{
+    margin-bottom: 30px;
+}
+
+form input{
+    width: 50%;
+}
+
+form button{
+    margin-top: 20px;
+}
+
+table{
+    border: 1px solid;
+    margin: auto;
+}
+
+table td, table th{
+    border: 1px solid;
+}
