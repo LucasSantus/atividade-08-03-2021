@@ -5,5 +5,9 @@ function cadastrar() {
     linha.insertCell(2).innerHTML += document.getElementById('telefone').value;
     document.getElementById('tabela-pessoa').appendChild(linha);
 
+    document.getElementById("nome").value="";
+    document.getElementById("email").value="";
+    document.getElementById("telefone").value="";
+
     return false;
 }
